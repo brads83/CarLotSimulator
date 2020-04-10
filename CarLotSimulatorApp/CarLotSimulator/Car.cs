@@ -21,13 +21,16 @@ namespace CarLotSimulator
         public bool IsDriveable { get; set; }
 
         public void MakeEngineNoise()
-        { 
+        {
             Console.WriteLine(EngineNoise);
         }
         public void MakeHonkNoise()
         {
             Console.WriteLine(HonkNoise);
         }
-
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Year: {Year}, Make: {Make}, Model: {Model}");
+        }
     }
 }

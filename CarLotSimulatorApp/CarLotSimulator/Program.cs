@@ -4,6 +4,7 @@ namespace CarLotSimulator
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             //TODO
@@ -15,6 +16,9 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
+            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+
             Car firstCar = new Car();
             Car secondCar = new Car();
             Car thirdCar = new Car();
@@ -49,7 +53,10 @@ namespace CarLotSimulator
             thirdCar.MakeEngineNoise();
             thirdCar.MakeHonkNoise();
 
-
+            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+            firstCar.PrintInfo();
+            secondCar.PrintInfo();
+            thirdCar.PrintInfo();
 
 
             //*************BONUS*************//
@@ -58,10 +65,7 @@ namespace CarLotSimulator
 
             //*************BONUS X 2*************//
 
-            //Create a CarLot class
-            //It should have at least one property: a List of cars
-            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
-            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+
         }
     }
 }
