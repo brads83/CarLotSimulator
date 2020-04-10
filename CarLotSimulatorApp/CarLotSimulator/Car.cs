@@ -20,13 +20,13 @@ namespace CarLotSimulator
         public string HonkNoise { get; set; }
         public bool IsDriveable { get; set; }
 
-        public void MakeEngineNoise()
+        public string MakeEngineNoise()
         {
-            Console.WriteLine(EngineNoise);
+            return EngineNoise;
         }
-        public void MakeHonkNoise()
+        public string MakeHonkNoise()
         {
-            Console.WriteLine(HonkNoise);
+            return HonkNoise;
         }
         public void PrintInfo()
         {
