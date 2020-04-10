@@ -18,7 +18,7 @@ namespace CarLotSimulator
             //Call each of the methods for each car
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
-
+            CarLot cars = new CarLot();
             Car firstCar = new Car();
             Car secondCar = new Car();
             Car thirdCar = new Car();
@@ -29,7 +29,7 @@ namespace CarLotSimulator
             firstCar.EngineNoise = "Quiet";
             firstCar.HonkNoise = "Loud";
             firstCar.IsDriveable = true;
-
+            
             secondCar.Year = 2014;
             secondCar.Make = "Ford";
             secondCar.Model = "Explorer";
@@ -54,9 +54,10 @@ namespace CarLotSimulator
             thirdCar.MakeHonkNoise();
 
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
-            firstCar.PrintInfo();
-            secondCar.PrintInfo();
-            thirdCar.PrintInfo();
+            for(int i = 0; i < carList.Count; i++)
+                firstCar.PrintInfo();
+                secondCar.PrintInfo();
+                thirdCar.PrintInfo();
 
 
             //*************BONUS*************//
