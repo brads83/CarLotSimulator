@@ -13,7 +13,7 @@ namespace CarLotSimulator
         public CarLot()
         {
         }
-        public List<string> carList = new List<string>();
+        public List<Car> carList = new List<Car>();
         
     }
     

@@ -54,10 +54,11 @@ namespace CarLotSimulator
             thirdCar.MakeHonkNoise();
 
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
-            for(int i = 0; i < carList.Count; i++)
-                firstCar.PrintInfo();
-                secondCar.PrintInfo();
-                thirdCar.PrintInfo();
+            foreach (var car in cars.carList)
+            {
+                Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model: {car.Model}");
+            }
+               
 
 
             //*************BONUS*************//
