@@ -29,6 +29,7 @@ namespace CarLotSimulator
             firstCar.EngineNoise = "Quiet";
             firstCar.HonkNoise = "Loud";
             firstCar.IsDriveable = true;
+            cars.carList.Add(firstCar);
             
             secondCar.Year = 2014;
             secondCar.Make = "Ford";
@@ -36,6 +37,7 @@ namespace CarLotSimulator
             secondCar.EngineNoise = "Quiet";
             secondCar.HonkNoise = "Very Loud";
             secondCar.IsDriveable = true;
+            cars.carList.Add(secondCar);
 
             thirdCar.Year = 1966;
             thirdCar.Make = "Ford";
@@ -43,6 +45,7 @@ namespace CarLotSimulator
             thirdCar.EngineNoise = "Loud";
             thirdCar.HonkNoise = "Low";
             thirdCar.IsDriveable = true;
+            cars.carList.Add(thirdCar);
 
             firstCar.MakeEngineNoise();
             firstCar.MakeHonkNoise();
